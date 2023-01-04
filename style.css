@@ -1,0 +1,61 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(77, 34, 112);
+}
+.candle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.candle-fire{
+    width: 30px;
+    height: 60px;
+    background: #FFAD00;
+    border-radius: 80% 20% 60% 60%;
+    box-shadow: 0 0 20px #FFAD00;
+    animation: fire 1s linear alternate infinite;
+}
+@keyframes fire {
+    0%{
+        border-radius: 80% 20% 60% 60%;
+    }
+    50%{
+        border-radius: 50% 50% 60% 60%;
+    }
+    100%{
+        border-radius: 20% 80% 60% 60%;
+    }
+}
+.candle-yarn{
+    width: 5px;
+    height: 20px;
+    background: #A78699;
+}
+.candle-body{
+    width: 100px;
+    height: 300px;
+    background: linear-gradient(to right, #fff 93%, #D8DEED 93%);
+    border-radius: 15px;
+}
+.bottom{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background: #1C233E;
+
+}
